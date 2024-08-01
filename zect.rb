@@ -1,7 +1,7 @@
 class Zect < Formula
   desc "zect data quality monitoring and AI-derived root cause analysis"
   homepage "https://www.zectonal.com"
-  url "https://github.com/zectonal/zectonal/releases/download/v0.15.0/zect-mac.zip"
+  url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.15.0/zect-mac.zip"
   sha256 "9db7d2d35fb8ab4c7bf72a0022f1e8884a723a757fa1a25687caf28efb8625a4"
   version "0.15.0"
 
