@@ -10,7 +10,7 @@ class Zect < Formula
   end
 
   service do
-    run [opt_bin/"zect", "run"]
+    run [opt_bin/"zect"]
     keep_alive true
     working_dir var
     log_path var/"log/zect.log"
@@ -22,6 +22,21 @@ class Zect < Formula
         brew uninstall zect
         rm -rf #{var}/log/zect*
         rm -rf ~/.config/zect
+  
+      To start zectonal/zectonal/zect now and restart at login:
+        brew services start zect
+  
+      Or, if you don't want/need a background service you can just run:
+        #{opt_bin}/zect
+        
+      Default configuration file location:
+        ~/.config/zect/config.toml
+  
+      To use a custom configuration file:
+        #{opt_bin}/zect --config-file /path/to/your/config.toml
+  
+      For full usage instructions, run:
+        #{opt_bin}/zect --help
     EOS
   end
   def post_uninstall
