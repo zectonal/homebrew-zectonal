@@ -1,9 +1,9 @@
 class Zect < Formula
   desc "zect data quality monitoring and AI-derived root cause analysis"
   homepage "https://github.com/zectonal/homebrew-zectonal"
-  url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.15.0/zect_0.15.0_macos.zip"
-  sha256 "9db7d2d35fb8ab4c7bf72a0022f1e8884a723a757fa1a25687caf28efb8625a4"
-  version "0.15.0"
+  url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.15.1/zect_0.15.1_macos.zip"
+  sha256 "de0b573fd9932ebfc825ccdbf8c9e782bf7fae15ef35e4a8e59686d22c63de3b"
+  version "0.15.1"
 
   def install
     bin.install "zect"
@@ -37,6 +37,8 @@ class Zect < Formula
   
       For full usage instructions, run:
         #{opt_bin}/zect --help
+        
+      http://localhost:8080
     EOS
   end
   def post_uninstall
