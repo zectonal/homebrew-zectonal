@@ -23,7 +23,6 @@ class Zect < Formula
     working_dir var
     log_path var/"log/zect.log"
     error_log_path var/"log/zect.error.log"
-    stop_signal :SIGINT
   end
   def caveats
     <<~EOS
