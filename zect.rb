@@ -1,20 +1,29 @@
 class Zect < Formula
   desc "zect data quality monitoring and AI-derived root cause analysis"
   homepage "https://github.com/zectonal/homebrew-zectonal"
-  url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.15.1/zect_0.15.1_macos.zip"
-  sha256 "de0b573fd9932ebfc825ccdbf8c9e782bf7fae15ef35e4a8e59686d22c63de3b"
-  version "0.15.1"
+  version "0.15.2"
 
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.15.2/zect_0.15.2_macos.zip"
+      sha256 "169b6ebcfc7e42ad8177090f7aa1cb5114d72acaee15f30c0fa1eac204d746c7"
+    else
+      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.15.2/zect_0.15.2_macos_x86.zip"
+      sha256 "db633cfed70201ab664682d9d0a27e8ddeb253dd96eed3c0048029c484f9ffc2"
+    end
+  end
+  
   def install
     bin.install "zect"
   end
 
   service do
     run [opt_bin/"zect"]
-    keep_alive true
+    keep_alive false
     working_dir var
     log_path var/"log/zect.log"
     error_log_path var/"log/zect.error.log"
+    stop_signal :SIGINT
   end
   def caveats
     <<~EOS
