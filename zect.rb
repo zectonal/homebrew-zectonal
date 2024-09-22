@@ -1,15 +1,15 @@
 class Zect < Formula
   desc "zect data quality monitoring and AI-derived root cause analysis"
   homepage "https://github.com/zectonal/homebrew-zectonal"
-  version "0.15.7"
+  version "0.16.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.15.7/zect_0.15.7_macos.zip"
-      sha256 "fcd066ffe5a52d73417dd81d3b6955c8a93a08e7419db173dcfe3b05c750faa3"
+      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.16.0/zect_0.16.0_macos.zip"
+      sha256 "6fde7838611b2dbb23244533c69c8a27537bd4dbf3a850315fc8ebee646d9104"
     else
-      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.15.7/zect_0.15.7_macos_x86.zip"
-      sha256 "485292e62c1d72e87a358e3d0875f48cfe4517c9e72d62684bca121c9852ef39"
+      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.16.0/zect_0.16.0_macos_x86.zip"
+      sha256 "12b45646d10bb5a802b206858236fa83e3e031a86ec919caabbaf1b4dd4e8c40"
     end
   end
   
