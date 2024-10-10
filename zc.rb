@@ -1,15 +1,15 @@
 class Zc < Formula
   desc "Command line data quality monitoring that is blazingly fast and easy to use."
   homepage "https://github.com/zectonal/homebrew-zectonal"
-  version "0.17.2"
+  version "0.17.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.17.2/zc_0.17.2_macos.zip"
-      sha256 "19f727fc1ab57fb0e86914ab9eb815a34a160e35e03c0f3e7126cab9784d1d01"
+      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.17.3/zc_0.17.3_macos.zip"
+      sha256 "880ceee7bc2988ae9d8ffe73280d747ab364ff681073c190ad6b607f658bb50a"
     else
-      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.17.2/zc_0.17.2_macos_x86.zip"
-      sha256 "dff4942fb85b015f05e0416785e3319a63d0b5ca3d6903edb355d09d0f44bd9e"
+      url "https://github.com/zectonal/homebrew-zectonal/releases/download/v0.17.3/zc_0.17.3_macos_x86.zip"
+      sha256 "8b49a58d0b01ae68d28934d5b58d51e95408ba20874b296fe0f5688ff85430ce"
     end
   end
 
