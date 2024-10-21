@@ -42,23 +42,17 @@ View our [License Terms and Conditions](https://docs.zectonal.com/zect/license/i
 ```bash
 brew tap zectonal/zectonal
 brew update
-brew install zect
 brew install zc 
 ```
 
 #### macos (brew) uninstall (recommended)
 
 ```bash
-brew remove zect
 brew remove zc
 brew untap zectonal/zectonal
 ```
 
 #### Run
-
-```bash
-brew services start zect
-```
 
 ```bash
 ./zc --configuration-file <your optional TOML config file>
@@ -73,7 +67,6 @@ A **Configuration** is comprised of two items:
 
 > [!Tip]
 > zect and zc use a TOML-formatted file for a configuration
-
 
 
 ### Environments
@@ -107,7 +100,6 @@ credential_profile_name = "not-default"
 >
 > - the `env_type` must be `aws`
 > - the `name` in this case is `my_aws_env` and must match exactly the `env_name` variable found in the [Sources](#sources) section (see below)
-
 
 
 ### Sources
